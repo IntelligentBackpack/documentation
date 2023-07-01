@@ -1,0 +1,93 @@
+ContextMap {
+	type = SYSTEM_LANDSCAPE
+	state = TO_BE
+    contains UserBoundedContex
+    contains BookBoundedContex
+    contains MaterialBoundedContex
+    contains CalendarBoudedContext
+    contains NextDayCheckerBoundedContext
+    contains BagBoundedContext
+    contains ReminderEngineBoundedContext
+
+    MaterialBoundedContex [D] <- [U, OHS,PL] UserBoundedContex
+    MaterialBoundedContex [D, CF] <- [U] BookBoundedContex
+    CalendarBoudedContext [D] <- [U, OHS,PL] UserBoundedContex
+    NextDayCheckerBoundedContext [D, ACL] <- [U] CalendarBoudedContext
+    NextDayCheckerBoundedContext [D, ACL] <- [U] BookBoundedContex
+    NextDayCheckerBoundedContext [D, ACL] <- [U] MaterialBoundedContex
+    BagBoundedContext [U] -> [D, CF] NextDayCheckerBoundedContext
+    ReminderEngineBoundedContext [D, CF] <- [U] BagBoundedContext
+    ReminderEngineBoundedContext [D, CF] <- [U] NextDayCheckerBoundedContext
+}
+
+BoundedContext UserBoundedContex implements UserManagement {
+    type = FEATURE
+    domainVisionStatement = "The user bounded context is responsible for managing users and their role."
+    responsibilities = "User", "Role"
+}
+
+BoundedContext BookBoundedContex implements BookManagement {
+    type = FEATURE
+    domainVisionStatement = "The book bounded context is responsible for managing books."
+    responsibilities = "Book"
+}
+
+BoundedContext MaterialBoundedContex implements MaterialManagement {
+    type = FEATURE
+    domainVisionStatement = "The material bounded context is responsible for managing material, either copy of books or other material."
+    responsibilities = "Item, Copy"
+}
+
+BoundedContext CalendarBoudedContext implements CalendarManagement {
+    type = FEATURE
+    domainVisionStatement = "The calendar bounded context is responsible for managing the event of a school year."
+    responsibilities = "Event, SchoolDay, SchoolWeek"
+}
+
+BoundedContext NextDayCheckerBoundedContext implements MaterialManagement, BookManagement, CalendarManagement {
+    type = FEATURE
+    domainVisionStatement = "The next day checker bounded context is responsible for checking if the next day is a school day."
+    responsibilities = "Event, SchoolDay, Item, Copy, Book"
+}
+
+BoundedContext BagBoundedContext implements SmartBag {
+    type = SYSTEM
+    domainVisionStatement = "The bag bounded context is responsible for managing the smart bag."
+    responsibilities = "Item, Bag"
+}
+
+BoundedContext ReminderEngineBoundedContext implements ReminderEngine {
+    type = APPLICATION
+    domainVisionStatement = "The reminder engine bounded context is responsible for managing the reminder engine."
+    responsibilities = "Item, Bag, Event, SchoolDay"
+}
+
+Domain BagSchoolDomain {
+    Subdomain BookManagement {
+        type = GENERIC_SUBDOMAIN
+    }
+    Subdomain UserManagement {
+        type = GENERIC_SUBDOMAIN
+    }
+    Subdomain CalendarManagement {
+        type = SUPPORTING_DOMAIN
+    }
+    Subdomain ReminderEngine {
+        type = CORE_DOMAIN
+    }
+    Subdomain SmartBag {
+        type = CORE_DOMAIN
+    }
+    Subdomain MaterialManagement {
+        type = CORE_DOMAIN
+    }
+    Subdomain MobileApp {
+        type = CORE_DOMAIN
+    }
+    Subdomain LabelCreation {
+        type = GENERIC_SUBDOMAIN
+    }
+    Subdomain BagCreation {
+        type = GENERIC_SUBDOMAIN
+    }
+}
