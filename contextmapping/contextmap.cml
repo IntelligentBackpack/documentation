@@ -5,19 +5,16 @@ ContextMap {
     contains BookBoundedContex
     contains MaterialBoundedContex
     contains CalendarBoudedContext
-    contains NextDayCheckerBoundedContext
-    contains BagBoundedContext
+    contains BagpackBoundedContext
     contains ReminderEngineBoundedContext
 
     MaterialBoundedContex [D] <- [U, OHS,PL] UserBoundedContex
     MaterialBoundedContex [D, CF] <- [U] BookBoundedContex
     CalendarBoudedContext [D] <- [U, OHS,PL] UserBoundedContex
-    NextDayCheckerBoundedContext [D, ACL] <- [U] CalendarBoudedContext
-    NextDayCheckerBoundedContext [D, ACL] <- [U] BookBoundedContex
-    NextDayCheckerBoundedContext [D, ACL] <- [U] MaterialBoundedContex
-    BagBoundedContext [U] -> [D, CF] NextDayCheckerBoundedContext
-    ReminderEngineBoundedContext [D, CF] <- [U] BagBoundedContext
-    ReminderEngineBoundedContext [D, CF] <- [U] NextDayCheckerBoundedContext
+    ReminderEngineBoundedContext [D, ACL] <- [U] CalendarBoudedContext
+    ReminderEngineBoundedContext [D, ACL] <- [U] BookBoundedContex
+    ReminderEngineBoundedContext [D, ACL] <- [U] MaterialBoundedContex
+    BagpackBoundedContext [U] -> [D, CF] ReminderEngineBoundedContext
 }
 
 BoundedContext UserBoundedContex implements UserManagement {
@@ -50,7 +47,7 @@ BoundedContext NextDayCheckerBoundedContext implements MaterialManagement, BookM
     responsibilities = "Event, SchoolDay, Item, Copy, Book"
 }
 
-BoundedContext BagBoundedContext implements SmartBag {
+BoundedContext BagpackBoundedContext implements SmartBag {
     type = SYSTEM
     domainVisionStatement = "The bag bounded context is responsible for managing the smart bag."
     responsibilities = "Item, Bag"
@@ -62,7 +59,7 @@ BoundedContext ReminderEngineBoundedContext implements ReminderEngine {
     responsibilities = "Item, Bag, Event, SchoolDay"
 }
 
-Domain BagSchoolDomain {
+Domain BagpackSchoolDomain {
     Subdomain BookManagement {
         type = GENERIC_SUBDOMAIN
     }
