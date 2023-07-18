@@ -14,3 +14,16 @@ In particolare si possono già notare i cosiddetti <i> Pivotal Events </i>, ovve
 - Sviluppo dell'interazione tra lo zaino intelligente e l'utente (ad esempio inserimento oggetti)
 
 ## Emerging Bounded Context
+Com'è possibile notare, si distinguono visibilmente degli agglomerati di post-it, i quali rappresentano primi indicatori dei possibili Bounded Context che andremo a progettare, un punto di partenza per un'analisi più approfondita.
+Più in particolare, questi agglomerati di eventi simili possono essere raggruppati per tipologie, in modo tra l'altro molto simile alle swim lanes individuate:
+- Gestione dei libri riconosciuti dal sistema
+- Gestione dei ruoli degli utenti e tutte le possibili azioni che potranno effettuare sul sistema
+- Tutto ciò che riguarda i calendari, lezioni e giorni scolastici
+- Gestione del proprio materiale da parte degli studenti e professori
+- Notifica di elementi mancanti nello zaino a fronte di una lista di oggetti richiesti
+- Gestione dello zaino, del contenuto e del suo aggiornamento di stato
+
+## Opportunità
+Sono state individuate due opportunità, ovvero due possibili requisiti non indicati nella richiesta di progetto del committente, ma comunque aspetti di valore che potrebbero essere sviluppate in un secondo momento grazie alla terminazione di un qualche componente, che ne rivela appunto il possibile valore e l'effettiva possibilità di realizzazione.
+Uno di questi è la possibilità di eliminare tutte le lezioni in un certo periodo di tempo per determinate materie, opportunità che richiede almeno l'implementazione della semplice aggiunta, rimozione o swap di lezioni in un preciso giorno, stando quindi a rappresentare una funzionalità aggiunta di possibile interesse per il cliente ma non richiesta.
+La seconda riguarda invece un hotspot, ovvero una questione con pensieri conflittuali all'interno del team e che non trova un'effettivo riscontro nella richiesta del committente: in questo caso parliamo della possibilità di creare un proprio evento da parte dello studente, ovvero la possibilità di creare un evento (come una lezione ma non necessariamente) che richieda del materiale necessario da avere con se. Questo hotspot, se implementato, potrebbe dar vita ad una opportunità, ovvero rendere l'applicazione e l'intero sistema, più propenso ad un utilizzo generico, collegabile ad un calendario personale oltre che ad un calendario scolastico.
