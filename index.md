@@ -1,8 +1,8 @@
 <details open>
 <summary>Analisi Domain Driven</summary>
 
-* <a href="eventstorming.html"> Event Storming </a>
-* <a href="boundedcontext.html"> Bounded Contexts </a>
+* <a href="eventstorming.md"> Event Storming </a>
+* <a href="boundedcontext.md"> Bounded Contexts </a>
 * Sub-Domain
 
 </details>
