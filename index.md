@@ -1,13 +1,4 @@
-<details open>
-<summary>Analisi Domain Driven</summary>
-
-* <a href="eventstorming.md"> Event Storming </a>
-* <a href="boundedcontext.md"> Bounded Contexts </a>
-* Sub-Domain
-
-</details>
-
-# Analisi Domain Driven Design
+# Design dei casi d'uso
 Come punto di partenza per l'analisi del dominio, si è deciso di partire dai casi d'uso del sistema che si vuole progettare, per capire al meglio quali sono le operazioni che gli utenti vedono e vogliono eseguire e quali attori sono coinvolti. L'importanza del loro utilizzo sta nell'identificare (a caratteri generali) quali attori sono coinvolti nelle varie operazioni e quali sono le principali azioni che devono essere sviluppate e/o sulle quali avere maggior riguardo. Per realizzare i casi d'uso c'è stata una forte collaborazione del team con i committenti, sfruttando svariate riunioni, che si sono poi ripetute abitualmente.
 ## Interazione tra utente e zaino intelligente
 Nel seguente schema sono rappresentate le interazioni di un generico attore User e lo zaino intelligente con il sistema.
