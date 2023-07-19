@@ -1,3 +1,10 @@
+---
+title: Processo di Event Storming
+layout: minimal
+has_children: true
+nav_order: 2
+---
+
 # Event Storming
 Durante una delle prime riunioni si è deciso di spendere un congruo tempo in anticipo per effettuare un brainstorming collettivo, per iniziare a disegnare i contorni del Domain Knowledge e delle tempistiche stimate sul sistema da realizzare. Esplorando il dominio per la prima volta infatti, è risultata in un'attività fondamentale per delineare concetti, opportunità, attori e sistemi esterni, su cui ci siamo poi basati per gli sviluppi futuri sia lato progettazione, sia implementazione. Alla sessione di Event Storming ha partecipato l'intero team di sviluppo e gli esperti di dominio.
 Abbiamo adottato il classico sistema di <i> Sticky Notes </i>, in un ambiente virtuale e collaborativo offerto dallo strumento online Lucidchart. 

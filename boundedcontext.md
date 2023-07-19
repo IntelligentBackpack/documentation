@@ -1,3 +1,10 @@
+---
+title: Bounded Context Canvas
+layout: minimal
+has_children: true
+nav_order: 4
+---
+
 # Bounded Contexts
 Di seguito sono mostrate le Bounded Context Canvas, ovvero card speciali che mostrano i dettagli di un singolo Bounded Context. Di seguito una piccola leggenda sulle varie classificazioni utilizzate.
 

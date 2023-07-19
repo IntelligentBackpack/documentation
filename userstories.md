@@ -1,3 +1,10 @@
+---
+title: Domain story telling
+layout: default
+has_children: true
+nav_order: 2
+---
+
 # Domain story telling e User Stories
 Una delle prime analisi effettuate è stata la raccolta delle User Stories, che sono uno strumento utilizzato nello sviluppo per descrivere le esigenze degli utenti in modo semplice, rappresentando una descrizione di quello che gli utenti vogliono ottenere dall'utilizzo del sistema, il tutto in una sessione di riunione in cui si discutono gli aspetti fondamentali del sistema, in linguaggio informale ma preciso.
 
