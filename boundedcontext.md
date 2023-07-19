@@ -30,4 +30,34 @@ Di seguito verranno analizzati i ruoli di dominio utilizzati nella stesura delle
 - Storage Context: gestisce basi di dati permanenti o volatili, in modo da offrire il loro accesso mediante opportune politiche
 - Gateway Context: si pone all'estremo di un sistema e gestisce le comunicazioni inbound e outbound
 
+## Sottodomini
+I sottodomini analizzati rispiecchiano gli Emerging Bounded Context già visti in fase di Event Storming, ovvero dal raggruppamento naturale scaturito nell'attaccare i post-it alla lavagna virtuale. Più nello specifico, i sottodomini sono i seguenti, con la relativa classificazione strategia:
+- Gestione libri
+Generic
+{: .label .label-green }
+- Gestione utenti
+Generic
+{: .label .label-green }
+- Gestione calendario
+Supporting
+{: .label .label-yellow }
+- Reminder Engine
+Core
+{: .label .label-red }
+- Zaino intelligente
+Core
+{: .label .label-red }
+- Creazione etichette (TAG)
+Generic
+{: .label .label-green }
+- Fabbricazione zaini
+Generic
+{: .label .label-green }
+- Gestione materiale per lezioni
+Core
+{: .label .label-red }
+- Applicazione mobile
+Core
+{: .label .label-red }
+
 <img src="https://lucid.app/publicSegments/view/389c87e1-3ee5-4a43-930f-660df8a70a1b/image.png" style="width:100%; height: auto; border-style: solid;">
