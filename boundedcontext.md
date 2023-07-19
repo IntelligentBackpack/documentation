@@ -33,26 +33,17 @@ Di seguito verranno analizzati i ruoli di dominio utilizzati nella stesura delle
 ## Sottodomini
 I sottodomini analizzati rispiecchiano gli Emerging Bounded Context già visti in fase di Event Storming, ovvero dal raggruppamento naturale scaturito nell'attaccare i post-it alla lavagna virtuale. Più nello specifico, i sottodomini sono i seguenti, con la relativa classificazione strategia:
 
-| Sottodominio                     | Classificazione Strategica           |
-| -------------------------------- | ------------------------------------ |
-| Gestione libri                   | Generic
-                                     {: .label .label-green }             |
-| Gestione utenti                  | Generic
-                                     {: .label .label-green }             |
-| Gestione calendario              | Supporting
-                                     {: .label .label-yellow }            |
-| Reminder Engine                  | Core
-                                     {: .label .label-red }               |
-| Zaino intelligente               | Core
-                                     {: .label .label-red }               |
-| Creazione etichette (TAG)        | Generic
-                                     {: .label .label-green }             |
-| Fabbricazione zaini              | Generic
-                                     {: .label .label-green }             |
-| Gestione materiale per lezioni   | Core
-                                     {: .label .label-red }               |
-| Applicazione mobile              | Core
-                                     {: .label .label-red }               |
+| Sottodominio                     | Classificazione Strategica                                                                            |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Gestione libri                   | <i style="border-radius: 10px; background-color: green; padding: 5px;"> Generic </i>                  |
+| Gestione utenti                  | <i style="border-radius: 10px; background-color: green; padding: 5px;"> Generic </i>                  |
+| Gestione calendario              | <i style="border-radius: 10px; color:black; background-color: yellow; padding: 5px;"> Supporting </i> |
+| Reminder Engine                  | <i style="border-radius: 10px; background-color: red; padding: 5px;"> Core </i>                       |
+| Zaino intelligente               | <i style="border-radius: 10px; background-color: red; padding: 5px;"> Core </i>                       |
+| Creazione etichette (TAG)        | <i style="border-radius: 10px; background-color: green; padding: 5px;"> Generic </i>                  |
+| Fabbricazione zaini              | <i style="border-radius: 10px; background-color: green; padding: 5px;"> Generic </i>                  |
+| Gestione materiale per lezioni   | <i style="border-radius: 10px; background-color: red; padding: 5px;"> Core </i>                       |
+| Applicazione mobile              | <i style="border-radius: 10px; background-color: red; padding: 5px;"> Core </i>                       |
 
 
 <img src="https://lucid.app/publicSegments/view/389c87e1-3ee5-4a43-930f-660df8a70a1b/image.png" style="width:100%; height: auto; border-style: solid;">
