@@ -1,7 +1,6 @@
 ---
 title: Processo di Event Storming
 layout: minimal
-has_children: true
 nav_order: 2
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Bounded Context Canvas
 layout: minimal
-has_children: true
 nav_order: 4
 ---
 
@@ -31,4 +30,4 @@ Di seguito verranno analizzati i ruoli di dominio utilizzati nella stesura delle
 - Storage Context: gestisce basi di dati permanenti o volatili, in modo da offrire il loro accesso mediante opportune politiche
 - Gateway Context: si pone all'estremo di un sistema e gestisce le comunicazioni inbound e outbound
 
-<img src="https://lucid.app/publicSegments/view/389c87e1-3ee5-4a43-930f-660df8a70a1b/image.png" style="width:100%; height: auto; border-style: solid;"> </img>
+<img src="https://lucid.app/publicSegments/view/389c87e1-3ee5-4a43-930f-660df8a70a1b/image.png" style="width:100%; height: auto; border-style: solid;">

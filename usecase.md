@@ -1,7 +1,6 @@
 ---
 title: Design dei casi d'uso
 layout: default
-has_children: true
 nav_order: 1
 ---
 
@@ -12,7 +11,7 @@ Nel seguente schema sono rappresentate le interazioni di un generico attore User
 In particolare:
 - L'attore User (studente o professore) può effettuare operazioni come aggiungere o rimuovere un oggetto nello zaino e verificare il materiale interno, per confrontarlo con quello necessario al giorno successivo. E' colui che possiede uno zaino intelligente (Smart Bagpack) e che effettua le operazioni che ne cambiano lo stato, quali aggiunta e rimozione di un oggetto
 - Lo zaino viene notificato quando viene aggiunto o rimosso un elemento al suo interno e notifica l'utente qualora si fosse dimenticato un oggetto; questo attore rappresenta lo zaino, la sua componente smart, la quale è aperto a interazioni con l'utente esterno e possiede capacità di connessione per comunicare con l'esterno
-<center><img src="https://lucid.app/publicSegments/view/c97f432e-905e-4671-8709-f5471451ed52/image.png" style="width:50%; height: auto; border-style: solid;"> </img></center>
+<center><img src="https://lucid.app/publicSegments/view/c97f432e-905e-4671-8709-f5471451ed52/image.png" style="width:100%; height: auto; border-style: solid;"> </center>
 
 ## Gestione istituti e lezioni
 Per quanto riguarda invece la gestione degli istituti e lezioni (con conseguente gestione del materiale necessario), dopo una riunione collaborativo si è realizzato il seguente schema Use Case, che mostra i casi d'uso e l'interazione tra i seguenti attori:
@@ -21,7 +20,7 @@ Per quanto riguarda invece la gestione degli istituti e lezioni (con conseguente
 - Professore: attore che gestisce le lezioni e tutto ciò che ne compete, può gestire più classi, calendari, materie
 - Owner: amministratore del sistema, il quale può aggiungere istituti
 - Studente: oltre ad utilizzare lo zaino, può accedere alle materie, calendario e libri necessari per una specifica lezione
-<center><img src="https://lucid.app/publicSegments/view/0f28296b-50a1-418c-bec0-d2e30e68c930/image.png" style="width:50%; height: auto; border-style: solid;"> </img></center>
+<center><img src="https://lucid.app/publicSegments/view/0f28296b-50a1-418c-bec0-d2e30e68c930/image.png" style="width:100%; height: auto; border-style: solid;"> </center>
 
 Uno dei principali requisiti che sono scaturiti dagli use cases è la necessità di avere un'utente generale non assegnato a nessun ruolo. Infatti, tutte le azioni del professore e dello studente, possono essere generalizzate e messe sotto permessi speciali, tramite l'utilizzo di un'utente generico che le accomuna. Saranno poi gli istituti, mediante i loro permessi, a modificare i ruoli degli utenti, assegnando studente o professore a seconda di quello che l'utente deve rappresentare.
 

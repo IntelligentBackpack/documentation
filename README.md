@@ -1,15 +1,3 @@
-<details open>
-<summary>Analisi Domain Driven</summary>
-
-* <a href="interview.md"> Interviste </a>
-* <a href="eventstorming.md"> Event Storming </a>
-* <a href="usecase.md"> Use cases </a>
-* <a href="userstories.md"> Domain Story Telling </a>
-* <a href="boundedcontext.md"> Bounded Contexts </a>
-* Sub-Domain
-
-</details>
-
 # Analisi Domain Driven Design
 Questo repository mostra la documentazione generata da tutto il processo di analisi in ottica DDD, quindi design guidato interamente dal dominio, dai cosiddetti Domain Expert ai Bounded Context per definire sottodomini indipendenti da associare a possibili team di sviluppo separati e paralleli.
 Seguendo l’approccio di sviluppo Domain Driven, si è partiti dalla fase fondamen-

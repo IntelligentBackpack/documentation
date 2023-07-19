@@ -1,8 +1,7 @@
 ---
 title: Domain story telling
 layout: default
-has_children: true
-nav_order: 2
+nav_order: 3
 ---
 
 # Domain story telling e User Stories
@@ -14,7 +13,7 @@ Innanzitutto ci siamo focalizzati sulla questione della creazione di un utente, 
 ## Gestione utenti e iscrizioni
 L'utente, per poter usufruire del sistema, deve creare un nuovo user, inserendo le credenziali richieste (username/password). Il sistema poi provvederà ad inviare all'utente un messaggio di conferma/errore.
 Effettuata la registrazione, l'utente può effetuare una richiesta di iscrizione presso un istituto (che dovrà poi prevedere se accettare/rifiutare la richiesta e segnalandolo indietro). Lo user, una volta accettato, dovrà provvedere ad inviare i propri dati, che verranno poi registrati all'interno del sistema dell'istituto e farà risultare l'utente iscritto ad un determinato istituto.
-<center><img src="img/usercreation.PNG" style="width:60%; height: auto; border-style: solid;"> </img></center>
+<center><img src="img/usercreation.PNG" style="width:100%; height: auto; border-style: solid;"> </center>
 
 Flusso di lettura:
 - Un'utente crea un profilo presso il registro utenti, che conferma la registrazione all'utente
@@ -27,7 +26,7 @@ Lo user può aggiungere oggetti nello zaino, che serviranno per la lezione del g
 Inoltre, lo user può anche verificare quali sono gli oggetti che sono presenti all'interno dello zaino attraverso l'applicazione.
 Lo zaino invece, deve controllare (in modo temporizzato) se un oggetto è stato inserito (o meno) per la lezione del giorno dopo, inviando una notifica all'utente che lo informerà del mancato inserimento
 Prima e durante la lezione, l'utente deve tirare fuori elementi dallo zaino. Quando poi lo zaino identifica un movimento (presumibilmente l'utente che sta camminando con lo zaino), controlla se il contenuto attuale corrisponde col contenuto iniziale. Se lo zaino individua un elemento mancante, viene avvisato l'utente.
-<center><img src="img/next_day_checker.PNG" style="width:60%; height: auto; border-style: solid;"> </img></center>
+<center><img src="img/next_day_checker.PNG" style="width:100%; height: auto; border-style: solid;"> </center>
 
 Flusso di lettura:
 - L'utente controlla l'orario scolastico sull'applicazione mobile, in particolare sul calendario
@@ -37,7 +36,7 @@ Flusso di lettura:
 ## Dal punto di vista del professore...
 Il professore ha la possibilità di controllare sia l'orario scolastico delle lezioni successive, sia il materiale necessario per essi.
 Ha la capacità di impostare (aggiungendo o rimuovendo) i materiali necessari per le lezioni successive.
-<center><img src="img/set_lesson.PNG" style="width:60%; height: auto; border-style: solid;"> </img></center>
+<center><img src="img/set_lesson.PNG" style="width:100%; height: auto; border-style: solid;"> </center>
 
 Flusso di lettura:
 - Un professore controlla l'orario scolastico sull'applicazione mobile, in particolare il calendario
@@ -46,7 +45,7 @@ Flusso di lettura:
 
 ## Registrazione degli zaini
 Infine, l'immagine successiva mostra la User Story per quanto riguarda il procedimento di registrazione di uno zaino:
-<center><img src="img/registrazione_zaino.PNG" style="width:60%; height: auto; border-style: solid;"> </img></center>
+<center><img src="img/registrazione_zaino.PNG" style="width:100%; height: auto; border-style: solid;"> </center>
 
 Flusso di lettura:
 \item Prima di tutto, l'utente inquadra, con l'app mobile, il QR Code presente all'interno dello zaino, accoppiato al dispositivo
