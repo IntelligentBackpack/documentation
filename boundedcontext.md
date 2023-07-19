@@ -32,31 +32,31 @@ Di seguito verranno analizzati i ruoli di dominio utilizzati nella stesura delle
 
 ## Sottodomini
 I sottodomini analizzati rispiecchiano gli Emerging Bounded Context già visti in fase di Event Storming, ovvero dal raggruppamento naturale scaturito nell'attaccare i post-it alla lavagna virtuale. Più nello specifico, i sottodomini sono i seguenti, con la relativa classificazione strategia:
-- Gestione libri
+- Gestione libri <br>
 Generic
 {: .label .label-green }
-- Gestione utenti
+- Gestione utenti <br>
 Generic
 {: .label .label-green }
-- Gestione calendario
+- Gestione calendario <br>
 Supporting
 {: .label .label-yellow }
-- Reminder Engine
+- Reminder Engine <br>
 Core
 {: .label .label-red }
-- Zaino intelligente
+- Zaino intelligente <br>
 Core
 {: .label .label-red }
-- Creazione etichette (TAG)
+- Creazione etichette (TAG) <br>
 Generic
 {: .label .label-green }
-- Fabbricazione zaini
+- Fabbricazione zaini <br>
 Generic
 {: .label .label-green }
-- Gestione materiale per lezioni
+- Gestione materiale per lezioni <br>
 Core
 {: .label .label-red }
-- Applicazione mobile
+- Applicazione mobile <br>
 Core
 {: .label .label-red }
 
