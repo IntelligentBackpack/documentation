@@ -36,35 +36,35 @@ I sottodomini analizzati rispiecchiano gli Emerging Bounded Context già visti i
 
 Generic
 {: .label .label-green }
-- Gestione utenti <br>
+- Gestione utenti
 
 Generic
 {: .label .label-green }
-- Gestione calendario <br>
+- Gestione calendario
 
 Supporting
 {: .label .label-yellow }
-- Reminder Engine <br>
+- Reminder Engine
 
 Core
 {: .label .label-red }
-- Zaino intelligente <br>
+- Zaino intelligente
 
 Core
 {: .label .label-red }
-- Creazione etichette (TAG) <br>
+- Creazione etichette (TAG)
 
 Generic
 {: .label .label-green }
-- Fabbricazione zaini <br>
+- Fabbricazione zaini
 
 Generic
 {: .label .label-green }
-- Gestione materiale per lezioni <br>
+- Gestione materiale per lezioni
 
 Core
 {: .label .label-red }
-- Applicazione mobile <br>
+- Applicazione mobile
 
 Core
 {: .label .label-red }
