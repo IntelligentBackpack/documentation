@@ -35,15 +35,24 @@ I sottodomini analizzati rispiecchiano gli Emerging Bounded Context già visti i
 
 | Sottodominio                     | Classificazione Strategica           |
 | -------------------------------- | ------------------------------------ |
-| Gestione libri                   | Generic {: .label .label-green }     |
-| Gestione utenti                  | Generic {: .label .label-green }     |
-| Gestione calendario              | Supporting {: .label .label-yellow } |
-| Reminder Engine                  | Core {: .label .label-red }          |
-| Zaino intelligente               | Core {: .label .label-red }          |
-| Creazione etichette (TAG)        | Generic {: .label .label-green }     |
-| Fabbricazione zaini              | Generic {: .label .label-green }     |
-| Gestione materiale per lezioni   | Core {: .label .label-red }          |
-| Applicazione mobile              | Core {: .label .label-red }          |
+| Gestione libri                   | Generic
+                                     {: .label .label-green }             |
+| Gestione utenti                  | Generic
+                                     {: .label .label-green }             |
+| Gestione calendario              | Supporting
+                                     {: .label .label-yellow }            |
+| Reminder Engine                  | Core
+                                     {: .label .label-red }               |
+| Zaino intelligente               | Core
+                                     {: .label .label-red }               |
+| Creazione etichette (TAG)        | Generic
+                                     {: .label .label-green }             |
+| Fabbricazione zaini              | Generic
+                                     {: .label .label-green }             |
+| Gestione materiale per lezioni   | Core
+                                     {: .label .label-red }               |
+| Applicazione mobile              | Core
+                                     {: .label .label-red }               |
 
 
 <img src="https://lucid.app/publicSegments/view/389c87e1-3ee5-4a43-930f-660df8a70a1b/image.png" style="width:100%; height: auto; border-style: solid;">
