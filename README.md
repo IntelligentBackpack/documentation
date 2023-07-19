@@ -3,7 +3,7 @@
 
 * <a href="interview.md"> Interviste </a>
 * <a href="eventstorming.md"> Event Storming </a>
-* <a href="index.md"> Use cases </a>
+* <a href="usecase.md"> Use cases </a>
 * <a href="userstories.md"> Domain Story Telling </a>
 * <a href="boundedcontext.md"> Bounded Contexts </a>
 * Sub-Domain
