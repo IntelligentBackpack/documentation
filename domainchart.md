@@ -1,6 +1,6 @@
 ---
 title: Domain Chart
-layout: minimal
+layout: default
 nav_order: 7
 ---
 
