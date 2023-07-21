@@ -1,7 +1,7 @@
 ---
 title: Domain story telling
 layout: default
-nav_order: 4
+nav_order: 5
 ---
 
 # Domain story telling e User Stories

@@ -1,7 +1,7 @@
 ---
 title: Processo di Event Storming
 layout: minimal
-nav_order: 2
+nav_order: 3
 ---
 
 # Event Storming

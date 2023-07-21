@@ -1,3 +1,9 @@
+---
+title: Strategic Design
+layout: minimal
+nav_order: 7
+---
+
 # Domain Chart
 Una volta analizzati i sottodomini nella sezione <i> Strategic Design </i>, possiamo passare ad un livello di analisi più avanzato, aggiungendo al campo visuale aspetti chiave come:
 - vantaggio competitivo

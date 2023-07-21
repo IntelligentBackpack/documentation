@@ -1,7 +1,7 @@
 ---
 title: Strategic Design
 layout: minimal
-nav_order: 5
+nav_order: 6
 ---
 
 # Bounded Contexts
