@@ -1,5 +1,5 @@
 ---
-title: Strategic Design
+title: Domain Chart
 layout: minimal
 nav_order: 7
 ---
@@ -14,7 +14,7 @@ Una volta analizzati i sottodomini nella sezione <i> Strategic Design </i>, poss
 
 A tal scopo. è riportata sotto la Domain Chart, ovvero un grafico determinato da due assi: il primo riguarda la complessità del modello, ovvero il livello di complessità interna che richiede quel preciso componente o bounded context (sottodominio); la seconda riguarda il livello di differenziazione nel mercato, nel business in cui vogliamo operare e dentro al quale inseriamo il prodotto. Entrambi questi livelli possono spaziare tra basso e alto, senza una quantificazione meramente numerica, ma secondo una possibile stima teorica.
 Chiaramente, i sottodomini <i style="color: red"> CORE </i> li troviamo nella parte in alto a destra del grafico, in quanto per definizione portano ad una elevata differenziazione sul mercato, dato per l'innovazione o per la creatività, e la sua intrinseca complessità, in quanto sicuramente non è banale dal punto di vista progettuale (essendo un prodotto nuovo o non presente nel mercato con tali peculiarità).
-Sottodomini <i style="color: green"> GENERIC </i> non portano a vantaggi lato business, ma possono nascondere complessità elevate, stessa cosa per sottodomini di <i style="color: yellow"> SUPPORT </i>,i quali possono anche portare vantaggi lato business ma non esserne il core fondamentale (a patto che siano di facile implementazione o altamente standardizzati).
+Sottodomini <i style="color: green"> GENERIC </i> non portano a vantaggi lato business, ma possono nascondere complessità elevate, stessa cosa per sottodomini di <i style="color: orange"> SUPPORT </i>,i quali possono anche portare vantaggi lato business ma non esserne il core fondamentale (a patto che siano di facile implementazione o altamente standardizzati).
 
 Nell'immagine che segue è possibile vedere la classificazione dei sottodomini precedentemente analizzati, con qualche dettaglio aggiuntivo.
 
