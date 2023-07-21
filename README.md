@@ -1,6 +1,4 @@
 ---
-title: Introduzione
-layout: default
 nav_order: 1
 ---
 # Analisi Domain Driven Design
