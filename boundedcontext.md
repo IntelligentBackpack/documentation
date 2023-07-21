@@ -1,5 +1,5 @@
 ---
-title: Bounded Context Canvas
+title: Strategic Design
 layout: minimal
 nav_order: 5
 ---
