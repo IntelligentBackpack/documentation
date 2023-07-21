@@ -1,7 +1,7 @@
+title: Intelligent Backpack DDD documentation
 lsi: false
 safe: true
 remote_theme: pmarsceill/just-the-docs
-source: [your repo's top level directory]
 incremental: false
 highlighter: rouge
 gist:
