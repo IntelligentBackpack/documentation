@@ -1,3 +1,9 @@
+---
+title: Introduzione
+layout: home
+has_children: false
+nav_order: 1
+---
 # Analisi Domain Driven Design
 Questo repository mostra la documentazione generata da tutto il processo di analisi in ottica DDD, quindi design guidato interamente dal dominio, dai cosiddetti Domain Expert ai Bounded Context per definire sottodomini indipendenti da associare a possibili team di sviluppo separati e paralleli.
 Seguendo l’approccio di sviluppo Domain Driven, si è partiti dalla fase fondamen-
