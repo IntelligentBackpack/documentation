@@ -1,7 +1,7 @@
 ---
 title: Bounded Context Canvas
 layout: minimal
-nav_order: 4
+nav_order: 5
 ---
 
 # Bounded Contexts
@@ -45,5 +45,23 @@ I sottodomini analizzati rispiecchiano gli Emerging Bounded Context già visti i
 | Gestione materiale per lezioni   | <i style="border-radius: 10px; color:black; background-color: red; padding: 5px;"> Core </i>                            |
 | Applicazione mobile              | <i style="border-radius: 10px; color:black; background-color: red; padding: 5px;"> Core </i>                            |
 
+- Gestione libri: sottodominio che riguarda la registrazione di nuovi libri nel sistema, con relative copie associate composte da codice identificativo ISBN e tag RFID univoco
+- Gestione utenti: sottodominio che riguarda la registrazione di nuovi utenti, i ruoli e le operazioni ad essi concesse, quindi permessi e zaini registrati
+- Gestione calendario: sottodominio che prevede la creazione di calendari riservati a classi scolastiche e relativa gestione, compresa aggiunta di lezioni nei giorni scolastici da parte del professore
+- Reminder Engine: sottodominio che riguarda il sistema di notifica da parte dell'applicativo mobile per lo studente, in modo da ricordare gli elementi mancanti e necessari alla lezione del giorno dopo
+- Zaino intelligente: sottodominio che comprende la realizzazione dello zaino intelligente, ovvero il dispositivo embedded, e la sua relativa gestione lato cloud e registrazione
+- Creazione etichette (TAG): sottodominio che riguarda la fabbricazione e scrittura dei tag RFID da associare alle copie di libri, quindi ai codici ISBN
+- Fabbricazione zaini: sottodominio che prende in considerazione l'effettiva realizzazione degli zaini fisici su cui montare il dispositivo IoT che ne controlla la controparte digitale e connessa
+- Gestione materiale per lezioni: sottodominio che riguarda la gestione del materiale necessario per ogni lezione presente su un qualsiasi calendario
+- Applicazione mobile: semplicemente il sottodominio che comprende l'applicazione mobile e la sua realizzazione e comunicazione con gli altri sottodomini
+
+## Context Map
+Dato l'insieme di sottodomini rilevati durante l'analisi, si è proceduto nella stesura della Context Map, in modo da rappresentare effettivamente le comunicazioni esistenti tra i vari sottodomini e i ruoli che essi hanno in queste comunicazioni.
+<img src="" style="width:100%; height: auto; border-style: solid;">
+
+## Domain Chart
+
+
+## Bounded Context Canvas
 
 <img src="https://lucid.app/publicSegments/view/389c87e1-3ee5-4a43-930f-660df8a70a1b/image.png" style="width:100%; height: auto; border-style: solid;">
