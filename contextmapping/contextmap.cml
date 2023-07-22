@@ -44,13 +44,13 @@ BoundedContext CalendarBoundedContext implements CalendarManagement {
 BoundedContext BagpackBoundedContext implements SmartBag {
     type = SYSTEM
     domainVisionStatement = "The bag bounded context is responsible for managing the smart bag."
-    responsibilities = "Item, Bag"
+    responsibilities = "Item, Bag, User"
 }
 
 BoundedContext ReminderEngineBoundedContext implements ReminderEngine {
     type = APPLICATION
     domainVisionStatement = "The reminder engine bounded context is responsible for managing the reminder engine."
-    responsibilities = "Item, Bag, Event, SchoolDay"
+    responsibilities = "Item, Bag, Event, SchoolDay, Copy, Book"
 }
 
 Domain BagpackSchoolDomain {
@@ -76,6 +76,9 @@ Domain BagpackSchoolDomain {
         type = CORE_DOMAIN
     }
     Subdomain LabelCreation {
+        type = GENERIC_SUBDOMAIN
+    }
+    Subdomain BagCreation {
         type = GENERIC_SUBDOMAIN
     }
 }
