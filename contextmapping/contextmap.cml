@@ -5,7 +5,7 @@ ContextMap {
     contains BookBoundedContext
     contains MaterialBoundedContext
     contains CalendarBoundedContext
-    contains BagpackBoundedContext
+    contains BackpackBoundedContext
     contains ReminderEngineBoundedContext
 
     MaterialBoundedContext [D] <- [U, OHS,PL] UserBoundedContext
@@ -14,7 +14,7 @@ ContextMap {
     ReminderEngineBoundedContext [D, ACL] <- [U] CalendarBoundedContext
     ReminderEngineBoundedContext [D, ACL] <- [U] BookBoundedContext
     ReminderEngineBoundedContext [D, ACL] <- [U] MaterialBoundedContext
-    BagpackBoundedContext [U] -> [D, CF] ReminderEngineBoundedContext
+    BackpackBoundedContext [U] -> [D, CF] ReminderEngineBoundedContext
 }
 
 BoundedContext UserBoundedContext implements UserManagement {
@@ -41,10 +41,10 @@ BoundedContext CalendarBoundedContext implements CalendarManagement {
     responsibilities = "Event, SchoolDay, SchoolWeek"
 }
 
-BoundedContext BagpackBoundedContext implements SmartBag {
+BoundedContext BackpackBoundedContext implements SmartBackpack {
     type = SYSTEM
-    domainVisionStatement = "The bag bounded context is responsible for managing the smart bag."
-    responsibilities = "Item, Bag, User"
+    domainVisionStatement = "The backpack bounded context is responsible for managing the smart bag."
+    responsibilities = "Item, Backpack, User"
 }
 
 BoundedContext ReminderEngineBoundedContext implements ReminderEngine {
@@ -53,7 +53,7 @@ BoundedContext ReminderEngineBoundedContext implements ReminderEngine {
     responsibilities = "Item, Bag, Event, SchoolDay, Copy, Book"
 }
 
-Domain BagpackSchoolDomain {
+Domain BackpackSchoolDomain {
     Subdomain BookManagement {
         type = GENERIC_SUBDOMAIN
     }
@@ -66,7 +66,7 @@ Domain BagpackSchoolDomain {
     Subdomain ReminderEngine {
         type = CORE_DOMAIN
     }
-    Subdomain SmartBag {
+    Subdomain SmartBackpack {
         type = CORE_DOMAIN
     }
     Subdomain MaterialManagement {
