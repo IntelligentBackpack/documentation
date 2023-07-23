@@ -57,10 +57,7 @@ I sottodomini analizzati rispiecchiano gli Emerging Bounded Context già visti i
 
 ## Context Map
 Dato l'insieme di sottodomini rilevati durante l'analisi, si è proceduto nella stesura della Context Map, in modo da rappresentare effettivamente le comunicazioni esistenti tra i vari sottodomini e i ruoli che essi hanno in queste comunicazioni.
-<img src="" style="width:100%; height: auto; border-style: solid;">
-
-## Domain Chart
-
+<img src="img/contextmap_ContextMap.png" style="width:100%; height: auto; border-style: solid;">
 
 ## Bounded Context Canvas
 

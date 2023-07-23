@@ -72,3 +72,32 @@ Per avere un'iniziale chiara visione del dominio su cui il sistema opererà, si 
 In particolare, dalla mappa si riesce già a delineare quali saranno le attività principali che rappresenteranno le principali milestone del progetto, quali sono le attività più corpose (interne, riassumibili nel completamento di una milestone) e quelle più basilari (esterne alla rete, rappresentano funzionalità base) e quali sono i requisiti che vincolano le varie attività.
 
 <center><img src="https://lucid.app/publicSegments/view/98b306f7-c90c-4b41-b69e-9e5a67920b1c/image.png" style="width:100%; height: auto; border-style: solid;"> </center>
+
+## Ubiquitous Language
+Durante la fase iniziale di analisi del dominio, si è definito l’ubiquitous language da usare durante lo sviluppo. Ciò e dato dal fatto che il committente (esperto del dominio) ha un linguaggio e terminologia diversa rispetto a quella degli sviluppatori, quindi è importante definire la differenza tra i vari concetti che potrebbero essere interpretati in un modo non opportuno e dare significato ai termini da utilizzare.
+L’ubiquitous language serve per eliminare la confusione e incomprensioni durante eventuali riunioni o discussione, dovuta ad una diversa terminologia e dizionari tecnici che per loro natura attribuiscono significati leggermente diversi (a volte profondamente). 
+Si vuole perciò a creare un linguaggio condiviso, che entrambe le parti possono comprendere, definendo una serie di vocaboli specifici nel dominio del problema con la propria descrizione univoca. Infine, questi vocaboli dovranno poi essere utilizzati durante la fase di sviluppo/documentazione.
+Nella tabella sotto sono riportati tutti i termini identificati dalle interviste e chiarimenti non documentati.
+
+| Termine del dominio        | Significato          | Sinonimi inglesi |
+|:-----------------|:------------------|:------|
+| Giorno           | Giorno della settimana    | Day  |
+| Data             | Rappresenta giorno specifico della settimana   | Date  |
+| User           | Rappresenta un utente che ha un ruolo generico, non ancora assegnato      | User   |
+| Studente           | Uno user che frequenta un istituto in una classe | Student  |
+| Professore           | Uno user che insegna ad un istituto e in una o più materie | Professor  |
+| Classe           |  È composta da più studenti, di un determinato anno | Class  |
+| Materia           | È un insieme di lezioni svolte da un singolo professore | Course, school subject  |
+| Lezione           | Insegnata da un professore, ad una classe, in un giorno | Lesson  |
+| Copia           | Copia fisica del libro | Copy of a book  |
+| Libro           | Informazioni su un preciso libro pubblicato | Book  |
+| Orario di un giorno           | Insieme di tutte le lezioni che sono presenti in un giorno | Daily school hours, Schoolday  |
+| Oggetto           | Materiale scolastico di vario tipo che non comprende i libri | Object  |
+| Materiale           | Ci si riferisce ad un insieme di oggetti e copie | Personal items  |
+| Istituto           | User con privilegi speciali che permette di modificare i ruoli e gestire le lezioni | Institute  |
+| Zaino           | zaino intelligente dello user | Backpack, Bag, Smartbag  |
+| Orario di data           | Insieme di tutte le lezioni che sono presenti in una precisa data | Date school hours, Schooldate  |
+| Calendario           | Insieme di orari di data | Calendar  |
+| Calendario scolastico      | Insieme di orari di giorni | School calendar, Schoolweek  |
+| Ruolo      | Ruolo assunto dall'utente all'interno del sistema, come professore o studente | Role  |
+| Evento      | Un qualsiasi evento assegnabile in un orario di data o di giorno. Una lezione è un evento particolare | Event  |
