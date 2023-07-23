@@ -10,7 +10,7 @@ Abbiamo adottato il classico sistema di <i> Sticky Notes </i>, in un ambiente vi
 
 Per una migliore lettura della lavagna virtuale di post-it, a lato è presente una leggenda, molto similare a quella convenzionale, che associa il colore del post-it utilizzando al suo significato.
 
-<img src="https://lucid.app/publicSegments/view/03a8b62d-c0ea-4cd0-956a-fa881d82025f/image.png" style="width:100%; height: auto; border-style: solid;"> </img>
+<img src="https://lucid.app/publicSegments/view/03a8b62d-c0ea-4cd0-956a-fa881d82025f/image.png" style="width:100%; height: auto; border-style: solid;">
 
 Come possiamo notare, sono rappresentate una serie di informazioni fondamentali, necessarie per una comprensione iniziale del dominio e una base da cui partire per una ulteriore analisi più raffinata. Per quanto riguarda l'andamento temporale che si è supposto fin da subito, risulta abbastanza parallelizzabile in termini di task da portare a termine, partendo da due <i> swim lanes </i> fino ad arrivare alla fine con circa quattro linee di sviluppo separate.
 In particolare si possono già notare i cosiddetti <i> Pivotal Events </i>, ovvero gli eventi ritenuti più importanti che si dovranno gestire nel corso dello sviluppo e che rappresenteranno delle milestone nel progetto:

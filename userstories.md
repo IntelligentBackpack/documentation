@@ -48,7 +48,7 @@ Infine, l'immagine successiva mostra la User Story per quanto riguarda il proced
 <center><img src="img/registrazione_zaino.PNG" style="width:100%; height: auto; border-style: solid;"> </center>
 
 Flusso di lettura:
-\item Prima di tutto, l'utente inquadra, con l'app mobile, il QR Code presente all'interno dello zaino, accoppiato al dispositivo
+Prima di tutto, l'utente inquadra, con l'app mobile, il QR Code presente all'interno dello zaino, accoppiato al dispositivo
 - L'applicazione mobile invia a questo punto una richiesta di registrazione al Registro Zaini, specificando il codice letto per riferirsi al preciso dispositivo in possesso
 - Il registro degli zaini, ricevuta la richiesta, invierà un messaggio di registrazione allo zaino (non sono mostrati casi particolari in cui lo zaino è già registrato o non esistente)
 - Infine, una serie di feedback in cascata riporta l'esito della registrazione all'utente, visibile con una notifica sull'applicazione smartphone
