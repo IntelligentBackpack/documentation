@@ -26,7 +26,7 @@ Inoltre è possibile che le lezioni vengano spostate una da un determinato giorn
 Assolutamente, si vuole lasciare piena libertà lato professore, esso deve poter cambiare il materiale disponibile per una data lezione in caso di errore di inserimento o cambi di programma.
 
 <b> Quindi, se ho capito bene, c'è differenza tra giorno settimanale e data di una lezione </b> <br>
-Un calendario settimanale mostra i giorni della settimana e gli orari in cui si svolgono lezione in quelli giorni, ripetute quindi durante l'anno ogni settimana. Un giorno è definito come l'etichetta del giorno settimanale in questione e un orario, invece una data  rappresenta un giorno specifico ben formattato seguendo le tipiche convenzioni di rappresentazione. Una lezione è riferita ad un giorno settimanale, quindi è ripetuta, ecco perché è presente il periodo di riferimento con inizio e fine.
+Un calendario settimanale mostra i giorni della settimana e gli orari in cui si svolgono lezione in quei giorni, ripetute quindi durante l'anno ogni settimana. Un giorno è definito come l'etichetta del giorno settimanale in questione e un orario, invece una data  rappresenta un giorno specifico ben formattato seguendo le tipiche convenzioni di rappresentazione. Una lezione è riferita ad un giorno settimanale, quindi è ripetuta, ecco perché è presente il periodo di riferimento con inizio e fine.
 
 <b> Quindi, quando si chiede le lezioni in giorno bisogna sia considerare le lezioni che sono presenti in quell'giorno della settimana che quelle in quella data, giusto? </b> <br>
 Esattamente, bisogna anche tenere conto dei cambiamenti apportati all'orario.

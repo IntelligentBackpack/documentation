@@ -56,8 +56,33 @@ I sottodomini analizzati rispiecchiano gli Emerging Bounded Context già visti i
 - Applicazione mobile: semplicemente il sottodominio che comprende l'applicazione mobile e la sua realizzazione e comunicazione con gli altri sottodomini
 
 ## Context Map
-Dato l'insieme di sottodomini rilevati durante l'analisi, si è proceduto nella stesura della Context Map, in modo da rappresentare effettivamente le comunicazioni esistenti tra i vari sottodomini e i ruoli che essi hanno in queste comunicazioni.
+Dato l'insieme di sottodomini rilevati durante l'analisi, si è proceduto nella stesura della Context Map, in modo da rappresentare effettivamente le comunicazioni esistenti tra i vari sottodomini e i ruoli che essi hanno in queste comunicazioni, le relazioni tra essi determineranno il comportamento del sistema.
 <center> <img src="img/contextmap_ContextMap.png" style="width:60%; height: auto; border-style: solid;"> </center>
+
+### Conformists
+Tra due BC viene messa una relazione di tipo <b> Conformist </b> quando il primo viene identificato come downstream in quanto opera come customer del servizio offerto dal secondo, adattandosi alle informazioni ricevute da esso che opera in upstream. I Bounded context che hanno questa relazione in questo caso sono i seguenti:
+| Upstream        | Downstream     |
+|:-------------|:------------------|
+| BackpackBoundedContext | ReminderEngineBoundedContext |
+| BookBoundedContext | MaterialBoundedContext   |
+
+### Anticorruption Layer
+
+In questa relazione troviamo un AntiCorruption Layer sul downstream del Reminder, in quanto non si adatta più ai dati inviati dall'upstream, ma ad un modello custom, la cui traduzione avviene mediante il componente ACL; questo semplifica l'insieme di termini UL da usare all'interno del customer.
+
+| Upstream        | Downstream con ACL    |
+|:-------------|:------------------|
+| BookBoundedContext | ReminderEngineBoundedContext |
+| MaterialBoundedContext | ReminderEngineBoundedContext   |
+| CalendarBoundedContext | ReminderEngineBoundedContext   |
+
+### Open Host Service con Published Language
+In questo pattern di relazione il potere viene dato maggiormente al consumer. Il supplier è interessato a proteggere i suoi consumatori, quindi aggiungendo un servizio Open Host che traduce i termini UL del consumer a quelli del supplier, secondo opportuni protocolli detti Published Language, uno per ogni conversione (tra ubiquitous language diversi).
+| OHS con PL        | Downstream |
+|:-------------|:------------------|
+| UserBoundedContext | MaterialBoundedContext |
+| UserBoundedContext | CalendarBoundedContext |
+
 
 ## Bounded Context Canvas
 
