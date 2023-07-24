@@ -61,6 +61,7 @@ Dato l'insieme di sottodomini rilevati durante l'analisi, si è proceduto nella 
 
 ### Conformists
 Tra due BC viene messa una relazione di tipo <b> Conformist </b> quando il primo viene identificato come downstream in quanto opera come customer del servizio offerto dal secondo, adattandosi alle informazioni ricevute da esso che opera in upstream. I Bounded context che hanno questa relazione in questo caso sono i seguenti:
+
 | Upstream        | Downstream     |
 |:-------------|:------------------|
 | BackpackBoundedContext | ReminderEngineBoundedContext |
@@ -78,6 +79,7 @@ In questa relazione troviamo un AntiCorruption Layer sul downstream del Reminder
 
 ### Open Host Service con Published Language
 In questo pattern di relazione il potere viene dato maggiormente al consumer. Il supplier è interessato a proteggere i suoi consumatori, quindi aggiungendo un servizio Open Host che traduce i termini UL del consumer a quelli del supplier, secondo opportuni protocolli detti Published Language, uno per ogni conversione (tra ubiquitous language diversi).
+
 | OHS con PL        | Downstream |
 |:-------------|:------------------|
 | UserBoundedContext | MaterialBoundedContext |
